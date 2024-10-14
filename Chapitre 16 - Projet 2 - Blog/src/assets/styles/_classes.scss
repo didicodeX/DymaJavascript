@@ -26,7 +26,11 @@
     color: white;
   }
   &-secondary{
-    background-color: crimson;
+    background-color: var(--error);
     color: white;
   }
+}
+
+.text-errors{
+  color: var(--error);
 }
