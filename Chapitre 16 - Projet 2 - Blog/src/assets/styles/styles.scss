@@ -1,0 +1,58 @@
+@use "base";
+@use "variables";
+@use "reset";
+@use "classes";
+@use "utils";
+@use "media-queries";
+
+#app {
+  min-height: 100vh;
+  display: grid;
+  grid:
+    "header"
+    "content" 1fr
+    "footer";
+}
+
+header {
+  grid-area: header;
+  background-color: var(--dark);
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    color: #f1f1f1;
+  }
+  .header-brand {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  ul {
+    display: flex;
+    
+    .header-nav {
+      font-size: 1.8rem;
+      padding: 0 10px;
+    }
+    .active {
+      text-decoration: underline;
+      font-weight: bold;
+      text-decoration-thickness: 2px;
+    }
+  }
+}
+.content {
+  grid-area: content;
+  background-color: crimson;
+  padding: 20px;
+}
+footer {
+  grid-area: footer;
+  padding: 20px;
+  background-color: var(--dark-grey);
+  font-size: 1.8rem;
+  color: #f1f1f1;
+  text-align: center;
+}
