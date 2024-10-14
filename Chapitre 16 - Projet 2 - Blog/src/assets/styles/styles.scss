@@ -5,7 +5,7 @@
 @use "utils";
 @use "media-queries";
 
-#app {
+.app {
   min-height: 100vh;
   display: grid;
   grid:
@@ -38,14 +38,14 @@ header {
     }
     .active {
       text-decoration: underline;
-      font-weight: bold;
+      font-weight: 500;
       text-decoration-thickness: 2px;
     }
   }
 }
 .content {
   grid-area: content;
-  background-color: crimson;
+  // background-color: crimson;
   padding: 20px;
 }
 footer {

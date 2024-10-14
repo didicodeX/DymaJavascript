@@ -1,0 +1,32 @@
+import "../assets/styles/styles.scss"
+import "./form.scss";
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit",e => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const entries = formData.entries()
+
+  console.log(entries);
+
+  // for(let entry of entries){
+  //   //Por que ca fonctionne il faut avoir l'attribu name dans le html
+  //   console.log(entry);
+  // }
+
+  //Methode avec le reduce
+  // const obj = Array.from(entries).reduce((acc,value)=> {
+  //   acc[value[0]] = value[1];
+  //   return acc;
+  // },{})
+
+  //Methode avec fromEntries
+  const obj = Object.fromEntries(entries);
+  const json = JSON.stringify(obj)
+  console.log(obj,json);
+  
+
+  
+})

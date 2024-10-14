@@ -5,11 +5,5 @@ export default defineConfig({
   root: "src",
   build: {
     outDir: "../public",
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "src/index.html"),
-        form: resolve(__dirname, "src/form/form.html"),
-      },
-    },
   },
 });
