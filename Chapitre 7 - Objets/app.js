@@ -164,4 +164,3 @@ if (book?.author?.sayBye?.()) {
 }
 
 // document.querySelector('body').style.backgroundColor = "red";
-
